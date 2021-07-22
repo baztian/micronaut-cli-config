@@ -5,7 +5,7 @@ config:
   stuff:
     partner:
       stuffUser: stuffUser
-      stuffUrl: ${PARTNER_STUFF_URL:partnerDefault}
+      stuffUrl: ${PARTNER_STUFF_URL:defaultPartnerUrl}
     customer:
       stuffUser: stuffUser
-      stuffUrl: ${CUSTOMER_STUFF_URL:customerDefault}
+      stuffUrl: ${CUSTOMER_STUFF_URL:defaultCustomerUrl}

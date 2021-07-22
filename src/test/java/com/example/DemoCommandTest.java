@@ -22,7 +22,10 @@ public class DemoCommandTest {
             PicocliRunner.run(DemoCommand.class, ctx, args);
 
             // demo
-            assertTrue(baos.toString().contains("Hi!"));
+            String output = baos.toString();
+            assertTrue(output.contains("Hi!"));
+            assertTrue(output.contains("defaultPartnerUrl"));
+            assertTrue(output.contains("defaultCustomerUrl"));
         }
     }
 }
