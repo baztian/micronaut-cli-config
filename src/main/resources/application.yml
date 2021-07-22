@@ -1,3 +1,11 @@
 micronaut:
   application:
     name: demo
+config:
+  stuff:
+    partner:
+      stuffUser: stuffUser
+      stuffUrl: ${PARTNER_STUFF_URL:partnerDefault}
+    customer:
+      stuffUser: stuffUser
+      stuffUrl: ${CUSTOMER_STUFF_URL:customerDefault}
