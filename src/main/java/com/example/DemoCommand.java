@@ -1,8 +1,6 @@
 package com.example;
 
 import io.micronaut.configuration.picocli.PicocliRunner;
-import io.micronaut.context.ApplicationContext;
-
 import javax.inject.Inject;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;

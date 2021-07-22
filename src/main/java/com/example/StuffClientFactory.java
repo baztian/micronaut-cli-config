@@ -7,7 +7,7 @@ import io.micronaut.context.annotation.Factory;
 public class StuffClientFactory {
 
   @EachBean(StuffConfig.class)
-  StuffClient stuffClient(StuffConfig config) {
+  StuffClient getStuffClient(StuffConfig config) {
     return new StuffClient(config);
   }
 }
